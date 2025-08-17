@@ -3,87 +3,87 @@
 /* Font imports -- TODO: Prune these down to used items */
 @font-face {
     font-family: 'Caligraf Thin';
-    src: url(../fonts/CaligrafThin.woff2) format('woff2'),
+    src: url(./fonts/CaligrafThin.woff2) format('woff2'),
 }
 
 @font-face {
     font-family: 'Caligraf Light';
-    src: url(../fonts/CaligrafLight.woff2) format('woff2'),
+    src: url(./fonts/CaligrafLight.woff2) format('woff2'),
 }
 
 @font-face {
     font-family: 'Caligraf Medium';
-    src: url(../fonts/CaligrafMedium.woff2) format('woff2'),
+    src: url(./fonts/CaligrafMedium.woff2) format('woff2'),
 }
 
 @font-face {
     font-family: 'Gotham Thin';
-    src: url(../fonts/GOTHAM-THIN.woff2) format('woff2');
+    src: url(./fonts/GOTHAM-THIN.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Gotham Light';
-    src: url(../fonts/GOTHAM-LIGHT.woff2) format('woff2');
+    src: url(./fonts/GOTHAM-LIGHT.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Gotham Medium';
-    src: url(../fonts/GOTHAM-MEDIUM.woff2) format('woff2');
+    src: url(./fonts/GOTHAM-MEDIUM.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Gotham Book';
-    src: url(../fonts/Gotham-Book.woff2) format('woff2');
+    src: url(./fonts/Gotham-Book.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Sabon';
-  src: url(../fonts/Sabon.woff2) format('woff2');
+  src: url(./fonts/Sabon.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Sabon Italic';
-  src: url(../fonts/SabonItalic.woff2) format('woff2');
+  src: url(./fonts/SabonItalic.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Sabon Bold';
-  src: url(../fonts/SabonBold.woff2) format('woff2');
+  src: url(./fonts/SabonBold.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Sabon Bold Italic';
-  src: url(../fonts/SabonBoldItalic.woff2) format('woff2');
+  src: url(./fonts/SabonBoldItalic.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Book Antiqua';
-  src: url(../fonts/bookantiqua.woff2) format('woff2');
+  src: url(./fonts/bookantiqua.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Book Antiqua Bold';
-    src: url(../fonts/bookantiqua_bold.woff2) format('woff2');
+    src: url(./fonts/bookantiqua_bold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Book Antiqua Italic';
-    src: url(../fonts/bookantiquaitalic.woff2) format('woff2');
+    src: url(./fonts/bookantiquaitalic.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Book Antiqua Bold Italic';
-    src: url(../fonts/bookantiquabolditalic.woff2) format('woff2');
+    src: url(./fonts/bookantiquabolditalic.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Royal Grande Light';
-    src: url(../fonts/RoyalGrande-Light.woff2) format('woff2');
+    src: url(./fonts/RoyalGrande-Light.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Royal Grande Medium';
-    src: url(../fonts/RoyalGrande-Medium.woff2) format('woff2');
+    src: url(./fonts/RoyalGrande-Medium.woff2) format('woff2');
 }
 
 /* Global styles */
