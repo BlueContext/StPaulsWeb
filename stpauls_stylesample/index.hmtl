@@ -1,0 +1,425 @@
+<html lang="en">
+<head>
+    <title>St. Paul's Style Guide Sampler</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        function toggleVisibilty() {
+            var elements = document.querySelectorAll(".alternateHeadings");
+            elements.forEach(function(element) {
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                    //console.log("Showing alternate headings");
+                } else if (element.style.display === "block") {
+                    element.style.display = "none";
+                    //console.log("Hiding alternate headings, elements count: " + elements[0].style.display);
+                } else {
+                    element.style.display = "block";
+                    //console.log("Fell through to catch-all");
+                }
+            });
+            var button = document.getElementById("showHideButton");
+            if (button.innerHTML === "Show alternates") {
+                button.innerHTML = "Hide alternates";
+            } else if (button.innerHTML === "Hide alternates") {
+                button.innerHTML = "Show alternates";
+            } else {
+                button.innterHTML = "Hide alternates";
+            };
+        }
+        
+    </script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a href="#logo" class="w3-bar-item hover-light">Logo</a>
+            <a href="#colorway" class="w3-bar-item hover-light">Colorway</a>
+            <a href="#typography" class="w3-bar-item hover-light">Typography</a>
+        </div>
+    </div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:100px; margin-right:100px;">      
+        <div class="w3-section" id="logo">
+            <div class="w3-row w3-padding-32">
+                <div class="w3-whole w3-container">
+                    <h2>Logo</h2>
+                    <p class="copy">Royal Grande is the type used in our logo, and should not be used in regular communications, but may be used for special designs on apparrel, etc.</p>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16 middlerow">
+                <div class="w3-whole w3-container">
+                    <p class="logo">St. Paul's Episcopal Church</p>
+                </div>
+            </div>
+            <div class="w3-row crimsonrow">
+                <div class="w3-whole w3-container">
+                    <p class="logo2 whitelogo">St. Paul's</p>
+                    <p class="logo2subhead whitelogo">Episcopal Church &<br />Montessori School</p>                 
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16 riverrow">
+                <div class="w3-whole w3-container">
+                    <p class="logo whitelogo">St. Paul's Episcopal Church</p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-section" id="colorway" >
+            <div class="w3-row w3-padding-32">
+                <div class="w3-whole w3-container">
+                    <h2>Colorway</h2>
+                    <p class="copy">St. Paul's uses a combination of serif and sans-serif fonts to create a modern and readable design.</p>
+                </div>
+            </div>
+            
+            <div class="w3-row w3-padding-32 toprow">
+                <div class="w3-third w3-container">
+                    <div class="w3-half w3-container circlecontainer">
+                        <canvas id="circlecrimson" width="100" height="100"></canvas>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <h4>Crimson</h4>
+                        <p class="description">Pantone® 7621 C<br />
+                                                C20 M99 Y98 K10 <br />
+                                                #672125</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="w3-half w3-container circlecontainer">
+                        <canvas id="circleriver" width="100" height="100"></canvas>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <h4>River</h4>
+                        <p class="description">Pantone® 2140 C<br />
+                                                C85 M66 Y22 K5<br />
+                                                #3c5d8d</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-container lastcolumn">
+                    <h3>Primary Colors</h3>
+                </div>                
+            </div>
+
+            <div class="w3-row w3-padding-16 middlerow">
+                <div class="w3-twothird w3-container nopadding">
+                    <div class="w3-row w3-padding-16">
+                        <div class="w3-half w3-container">
+                            <div class="w3-half w3-container circlecontainer">
+                                <canvas id="circleflame" width="100" height="100"></canvas>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h4>Flame</h4>
+                                <p class="description">Pantone® 7580 C<br />          
+                                                        C17 M81 Y93 K6<br />
+                                                        #d35127</p>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-container">
+                            <div class="w3-half w3-container circlecontainer">
+                                <canvas id="circlelavender" width="100" height="100"></canvas>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h4>Lavender</h4>
+                                <p class="description">Pantone® 2635 C<br />
+                                                        C21 M29 Y0 K0<br />
+                                                        #ac2564</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-padding-16">
+                        <div class="w3-half w3-container">
+                            <div class="w3-half w3-container circlecontainer">
+                                <canvas id="circlegold" width="100" height="100"></canvas>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h4>Gold</h4>
+                                <p class="description">Pantone® 7563 C<br />
+                                                        C16 M41 Y99 K1<br />
+                                                        #d49a29</p>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-container">
+                            <div class="w3-half w3-container circlecontainer">
+                                <canvas id="circleviolet" width="100" height="100"></canvas>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h4>Violet</h4>
+                                <p class="description">Pantone® 7662 C<br />
+                                                        C59 M88 Y18 K3<br />
+                                                        #7e4a79</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-padding-16">
+                        <div class="w3-half w3-container">
+                            <div class="w3-half w3-container circlecontainer">
+                                <canvas id="circleemerald" width="100" height="100"></canvas>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h4>Emerald</h4>
+                                <p class="description">Pantone® 6158 <br />
+                                                        C81 M29 Y71 K13 <br />
+                                                        #337C58</p>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-container">
+                            <div class="w3-half w3-container circlecontainer">
+                                <canvas id="circlewine" width="100" height="100"></canvas>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h4>Wine</h4>
+                                <p class="description">Pantone® 6063 C <br />
+                                                        C30 M96 Y44 K9<br />
+                                                        #ac2564</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-container nopadding">
+                    <div class="w3-row w3-padding-16">
+                        <div class="w3-whole w3-container lastcolumn">
+                            <h3>Supporting Colors</h3>
+                            <p class="copy">These colors may be used to complement the primary colors. Some of them also reflect the liturgical calendar. The logo may be used in any of the brand colors.</p>
+                            <p class="copy">Neither the primary nor supporting colors should appear on top of one another. Anytime a logo or text appears in color, it should be on a light neutral background. Use black, white, or cream on a color background.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-row w3-padding-16 middlerow">
+                <div class="w3-third w3-container">
+                    <div class="w3-half w3-container circlecontainer">
+                        <canvas id="circleforest" width="100" height="100"></canvas>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <h4>Forest</h4>
+                        <p class="description">Pantone® 3308 C
+                                                C91 M47 Y73 K49
+                                                #003d2b</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="w3-half w3-container circlecontainer">
+                        <p></p>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="w3-third w3-container lastcolumn">
+                    <h3></h3>
+                </div>
+            </div>
+            
+            <div class="w3-row w3-padding-32 bottomrow">
+                <div class="w3-third w3-container">
+                    <div class="w3-half w3-container circlecontainer">
+                        <canvas id="circletaupe" width="100" height="100"></canvas>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <h4>Taupe</h4>
+                        <p class="description">C53 M54 Y58 K24<br />
+                                                #685c59</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="w3-half w3-container circlecontainer">
+                        <canvas id="circlecream" width="100" height="100"></canvas>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <h4>Cream</h4>
+                        <p class="description">C85 M66 Y22 K5<br />
+                                                #f9f0e8</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-container lastcolumn">
+                    <h3>Neutrals</h3>
+                    <p class="copy">In addition to black and white, St. Paul's uses shades and tints of taupe and cream.</p>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-32 bottomrow nopadding">
+                <div class="w3-whole w3-container nopadding">
+                    <div class="w3-fifth w3-container nopadding">
+                        <p class="textcolor textcolor1">#231F20</p>
+                    </div>
+                    <div class="w3-fifth w3-container nopadding">
+                        <p class="textcolor textcolor2">#474040</p>
+                    </div>
+                    <div class="w3-fifth w3-container nopadding">
+                        <p class="textcolor textcolor3">#685C59</p>
+                    </div>
+                    <div class="w3-fifth w3-container nopadding">
+                        <p class="textcolor textcolor4">#8B7B77</p>
+                    </div>
+                    <div class="w3-fifth w3-container nopadding">
+                        <p class="textcolor textcolor5">#B5A69F</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-section" id="typography">
+            <div class="w3-row w3-padding-32">
+                <div class="w3-whole w3-container">
+                    <h2>Typography</h2>
+                    <p class="copy">Our brand uses three primary typefaces: Caligraf, Gotham, and Book Antiqua.</p>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16 ">
+                <div class="w3-third w3-container">
+                    <h3>Caligraf</h3>
+                    <p class="copy">Caligraf is a beautiful display typeface that can be used for headings and titles, but may not be available on all platforms.</p>
+                </div>
+                <div class="w3-twothird w3-container">
+                    <p class="copy">Mission Statement, Headings, Sentence Case Only</p>
+                    <p class="fontsample caligraf">Affirming that every person belongs in the beauty of holiness.</p>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16 ">
+                <div class="w3-third w3-container">
+                    <h3>Gotham</h3>
+                    <p class="copy">Gotham is a clean sans-serif typeface that we use only in all-caps, tracked out to 150 / 1000.
+Where Gotham is not available, Montserrat may be used as a substitute.</p>
+                </div>
+                <div class="w3-twothird w3-container">
+                    <p class="copy">Subheadings, Uppercase Only, 150 Tracking</p>
+                    <p class="fontsample gotham">Affirming that every person belongs in the beauty of holiness.</p>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16 ">
+                <div class="w3-third w3-container">
+                    <h3>Book Antiqua / Palatino</h3>
+                    <p class="copy">Subheadings, Uppercase Only, 150 Tracking.</p>
+                </div>
+                <div class="w3-twothird w3-container">
+                    <p class="copy">Body, upper and lower case</p>
+                    <p class="fontsample bookantiqua">Affirming that <span class="bookantiquaitalic">every person</span> belongs in the beauty of holiness.</p>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16 ">
+                <div class="w3-third w3-container">
+                    <h3>Website Headings</h3>
+                    <p class="copy">In general, it is desirable to use no more than three typefaces on a website to maintain a cohesive appearance. Typefaces that are not standard system-font familes must be served to the client as webfonts.</p>
+                    <button class="w3-button" id="showHideButton" onclick="toggleVisibilty()">Show alternates</button>
+                </div>
+                <div class="w3-twothird w3-container">
+                    <h1 class="sph1a">Level One Heading</h1>
+                    <h1 class="sph1b alternateHeadings">Level One Heading</h1>
+                    <h1 class="sph1c alternateHeadings">Level One Heading (Special)</h1>
+                    <h2 class="sph2a">Level Two Heading</h2>
+                    <h2 class="sph2b alternateHeadings">Level Two Heading</h2>
+                    <h2 class="sph2c alternateHeadings">Level Two Heading (Special)</h2>
+                    <h3 class="sph3a">Level Three Heading</h3>
+                    <h4 class="sph4a">Level Four Heading</h4>
+                    <h5 class="sph5a">Level Five Heading</h5>
+                    <h6 class="sph6a">Level Six Heading</h6>
+                </div>
+            </div>
+           <div class="w3-row w3-padding-16 ">
+                <div class="w3-third w3-container">
+                    <h3>Body & Block Quote</h3>
+                    <p class="copy">Book Antiqua / Palatino used for all paragraph and block text.</p>
+                </div>
+                <div class="w3-twothird w3-container">
+                    <p class="spbody1">St. Paul’s is a congregation open to all who seek God and a stronger relationship with Christ. All baptized Christians are welcome to receive communion at this altar.</p>
+                    <blockquote class="spblockquote">So that here you have an ordre for praier (as touchyng the readyng of holy scripture) muche agreable to the mynde and purpose of the olde fathers, and a greate deale more profitable and commodious, then that whiche of late was used.</blockquote>
+                </div>
+            </div>
+            
+        </div>
+    <script>
+        var canvas = document.getElementById("circlecrimson");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#b72125"; 
+        context.fill()
+    </script>
+
+    <script>
+        var canvas = document.getElementById("circleriver");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#3c5d8d"; 
+        context.fill()
+    </script>
+
+    <script>
+        var canvas = document.getElementById("circleflame");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#d35127"; 
+        context.fill()
+    </script>
+    
+    <script>
+        var canvas = document.getElementById("circlelavender");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#c5b4e3"; 
+        context.fill()
+    </script>
+    
+    <script>
+        var canvas = document.getElementById("circlegold");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#d49a29"; 
+        context.fill()
+    </script>
+    
+    <script>
+        var canvas = document.getElementById("circleviolet");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#7e4a79"; 
+        context.fill()
+    </script>
+
+    <script>
+        var canvas = document.getElementById("circleemerald");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#337c58"; 
+        context.fill()
+    </script>
+    
+    <script>
+        var canvas = document.getElementById("circlewine");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#ac2564"; 
+        context.fill()
+    </script>
+
+    <script>
+        var canvas = document.getElementById("circleforest");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#003d2b"; 
+        context.fill()
+    </script>
+
+    <script>
+        var canvas = document.getElementById("circletaupe");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#685c59"; 
+        context.fill()
+    </script>
+
+    <script>
+        var canvas = document.getElementById("circlecream");
+        var context = canvas.getContext("2d");
+        context.arc(50, 50, 50, 0, Math.PI * 2, false);
+        context.fillStyle = "#f9f0e8"; 
+        context.fill()
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Caligraf Thin';
+    src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d4441db6c4813e9ce546c/1755137089162/CaligrafThin.woff2) format('woff2'),
+}
+
+@font-face {
+    font-family: 'Caligraf Light';
+    src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d44359f39cd0384b24290/1755137077787/CaligrafLight.woff2) format('woff2'),
+}
+
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d497304d2180c6af4b993/1755138419198/GOTHAM-MEDIUM.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Sabon';
+  src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d45444032957670e87e1c/1755137348409/Sabon.woff2);
+}
+
+@font-face {
+  font-family: 'Sabon Italic';
+  src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d45564b856664b4858e91/1755137366747/SabonItalic.woff2);
+}
+
+@font-face {
+  font-family: 'Sabon Bold';
+  src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d454c19d16d4308d8904a/1755137356392/SabonBold.woff2);
+}
+
+@font-face {
+  font-family: 'Sabon Bold Italic';
+  src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d4551f50a5617092c384a/1755137361337/SabonBoldItalic.woff2);
+}
+
+@font-face {
+  font-family: 'Book Antiqua';
+  src: url(https://static1.squarespace.com/static/689d105785aab75a69b33648/t/689d3c1b86fd34080b82de25/1755135003536/bookantiqua.woff2);
+}
+
+h1, h2, h3, h4, p {
+  color: #685c59;
+}
+
+h1, strong {
+    font-family: 'Caligraf Light', serif;
+    font-size: 58px;
+    text-align: center;
+    letter-spacing: .025em;
+  	font-weight: normal; 
+}
+
+h2 {
+    font-family: 'Gotham Medium', serif;
+  	font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Book Antiqua', serif;
+    text-align: center;
+}
+
+body {
+    font-family: 'Sabon', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #685c59;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p.description {
+  	font-size: 1em;
+}

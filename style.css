@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url(fonts/bookantiqua.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Book Antiqua Bold';
+    src: url(fonts/bookantiqua_bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Caligraf Thin';
+    src: url(fonts/CaligrafThin.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Caligraf Light';
+    src: url(fonts/CaligrafLight.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Caligraf Medium';
+    src: url(fonts/CaligrafMedium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Gotham Thin';
+    src: url(fonts/GOTHAM-THIN.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url(fonts/GOTHAM-LIGHT.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url(fonts/GOTHAM-MEDIUM.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sabon';
+    src: url(fonts/Sabon.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sabon Italic';
+    src: url(fonts/SabonItalic.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sabon Bold';
+    src: url(fonts/SabonBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sabon Bold Italic';
+    src: url(fonts/SabonBoldItalic.woff2) format('woff2');
+}
+
+body {
+    width:862px;
+    background-color: #FAFAFA;
+}
+
+h1 {
+    font-family: "Sabon Italic";
+    line-height: 30px !important;
+}
+
+.events {
+    padding: 15px;
+    background-color: #ffffff !important;
+}
+
+
+td.weeksummary {
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.headerimage, .missionstatement {
+    text-align: center !important;
+    align-items: center !important;
+    padding-top:18px;
+    padding-bottom: 10px;
+    border-radius:3em;
+    width: 564;
+    max-width: 1200px;
+}
+
+.dividerblock {
+    table-layout: fixed !important;
+    padding: 18px;
+}
+
+.divider {
+    vertical-align: middle !important;
+    min-width: 100%;
+    border-top: 2px solid #EAEAEA;
+    border-collapse: collapse;
+    padding: 18px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #EAEAEA;
+    margin: 18px 0;
+    padding: 0;
+}
